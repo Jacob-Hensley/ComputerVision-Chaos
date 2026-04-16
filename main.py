@@ -94,8 +94,8 @@ if __name__ == "__main__":
     print(f"Loaded {len(frames)} frames")
     
     # Analysis pipeline
-    pivot = detect_pivot(frames)
-    bob_positions = detect_bobs(frames, pivot=pivot)
+    pivot, L1 = detect_pivot(frames)
+    bob_positions = detect_bobs(frames, pivot=pivot, L1=L1)
     angles = estimate_angles(pivot, bob_positions)
     
     has_chaos, chaos_frame = analyze_chaos(angles)
