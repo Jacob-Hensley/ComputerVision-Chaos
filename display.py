@@ -101,7 +101,7 @@ def visualize_detections(frames, pivot, bob_positions, angles=None,
         if out is not None:
             out.write(display)
 
-        # wait for user to quit window manually with 'q' or pause with 'p'
+        # Wait for user to quit window manually with 'q' or pause with 'p'
         key = cv2.waitKey(delay) & 0xFF
         if key == ord('q'):
             break

@@ -240,5 +240,7 @@ def analyze_chaos(angles):
                     first_chaos_frame = i
                     break
 
+    # Return whether chaos was detected and the index of the 
+    # first frame where it was detected
     has_chaos = first_chaos_frame != -1
     return has_chaos, first_chaos_frame
