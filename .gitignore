@@ -131,7 +131,7 @@ dmypy.json
 .DS_Store
 
 # Computer Vision / Machine Learning specific
-*.mp4
+# *.mp4
 *.avi
 *.mov
 *.jpg
